@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "hitesha",
+      "password": "password1",
+      "email": "hitesha@example.com",
+      "firstName": "hitesha",
+      "lastName": "k"
+    },
+    {
+      "id": 2,
+      "username": "hiren",
+      "password": "password2",
+      "email": "hiren@example.com",
+      "firstName": "hiren",
+      "lastName": "k"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "title": "How to sort an array in JavaScript?",
+      "description": "I have an array of objects and I want to sort it based on a property of the objects. How can I do that?",
+      "tags": ["javascript", "arrays", "sorting"],
+      "userId": 1,
+      "answers": [
+        {
+          "id": 1,
+          "text": "You can use the `sort()` method of the array and pass in a comparison function that compares the values based on the property you want to sort on.",
+          "userId": 2,
+          "votes": 55,
+          "accepted": false
+        },
+        {
+          "id": 2,
+          "text": "Another approach is to use the `map()` method to extract the property you want to sort on, then use the `sort()` method on the resulting array, and finally use the `map()` method again to transform the sorted array back to the original format.",
+          "userId": 1,
+          "votes": 23,
+          "accepted": true
+        }
+      ],
+      "views": 103
+    },
+    {
+      "id": 2,
+      "title": "What is the difference between `var`, `let`, and `const` in JavaScript?",
+      "description": "I am confused about the different ways to declare variables in JavaScript. What are the differences between `var`, `let`, and `const`?",
+      "tags": ["javascript", "variables"],
+      "userId": 2,
+      "answers": [
+        {
+          "id": 3,
+          "text": "`var` is function-scoped, `let` and `const` are block-scoped. `let` can be reassigned, `const` cannot. Use `let` when you need to reassign the variable, use `const` otherwise.",
+          "userId": 1,
+          "votes": 377,
+          "accepted": false
+        }
+      ],
+      "views": 50
+    }
+  ]
+}

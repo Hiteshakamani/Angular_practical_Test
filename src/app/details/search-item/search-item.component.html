@@ -1,0 +1,12 @@
+<div *ngIf="searchResults.length > 0">
+    <div>
+        <h3>{{result.title}}</h3>
+        <p>{{result.description}}</p>
+        <!-- <p>Vote Count: {{question?.votes}}</p> -->
+        <p>Answers Count: {{question?.answers?.length || 0}}</p>
+        <p>Views Count: {{question?.views}}</p>
+      </div>
+  
+  <div *ngIf="searchResults.length == 0">
+    <p>No results found for "{{searchQuery}}"</p>
+  </div>
